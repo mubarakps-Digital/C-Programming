@@ -1,9 +1,10 @@
-/*Write a C program using switch and if-else 
+/*Write a C program using switch, do while loop and if-else 
 to simulate a simple ATM system.*/
 #include<stdio.h>
 int main(){
-    int Check_Balance = 5000,Deposit_Money,Withdraw_Money,Input;
-    printf("===== ATM MENU =====\n1.Check Balance\n2.Deposit Money\n3.Withdraw Money\n4.Exit\n");
+    int Check_Balance = 50000,Deposit_Money,Withdraw_Money,Input;
+    do{
+        printf("\n===== ATM MENU =====\n1.Check Balance\n2.Deposit Money\n3.Withdraw Money\n4.Exit\n");
     printf("Enter your Choice = ");
     scanf(" %d", &Input);
     switch(Input){
@@ -46,5 +47,6 @@ int main(){
         printf("Invalid Choice");
         break;
         }
+    }while(Input !=4);
         return 0;
 }
